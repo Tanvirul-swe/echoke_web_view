@@ -6,6 +6,8 @@ import 'package:permission_handler/permission_handler.dart';
 Future<void> main () async {
   WidgetsFlutterBinding.ensureInitialized();
     await Permission.camera.request();
+    await Permission.photos.request();
+    await Permission.storage.request();
 
   runApp(const Root());
 }

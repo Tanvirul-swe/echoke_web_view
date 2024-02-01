@@ -1,11 +1,13 @@
 import 'dart:async';
 
+import 'package:echoke_web_view/src/common/common_widget.dart';
 import 'package:echoke_web_view/src/constant/app_assets.dart';
 import 'package:echoke_web_view/src/constant/app_colors.dart';
 import 'package:echoke_web_view/src/constant/app_constant.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -50,17 +52,22 @@ class _HomePageState extends State<HomePage> {
         ),
       )
       ..loadRequest(Uri.parse(AppConstant.WEB_URL));
+
+      
+
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PopScope(
-        onPopInvoked: (value) async {
+      body: WillPopScope(
+        onWillPop: () async {
           if (await controller.canGoBack()) {
             controller.goBack();
+            return false;
           }
+          return await onBackButtonPressed(context);
         },
         child: SafeArea(
             child: _isLoading
