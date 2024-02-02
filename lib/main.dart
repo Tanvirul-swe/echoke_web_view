@@ -32,7 +32,7 @@ class _RootState extends State<Root> {
       title: AppConstant.APP_NAME,
       onGenerateRoute: RouteGenerator.generateRoute,
       debugShowCheckedModeBanner: false,
-      initialRoute: '/SplashScreen',
+      initialRoute: '/HomePage',
     );
   }
 }
