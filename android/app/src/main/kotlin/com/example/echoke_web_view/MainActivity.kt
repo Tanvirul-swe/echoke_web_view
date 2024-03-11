@@ -1,4 +1,4 @@
-package com.example.echoke_web_view
+package com.hallapaystore.hallapay
 
 import io.flutter.embedding.android.FlutterActivity
 
