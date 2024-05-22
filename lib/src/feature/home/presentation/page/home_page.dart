@@ -1,15 +1,15 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:echoke_web_view/src/common/app_helper.dart';
 import 'package:echoke_web_view/src/common/common_widget.dart';
 import 'package:echoke_web_view/src/constant/app_colors.dart';
 import 'package:echoke_web_view/src/constant/app_constant.dart';
 import 'package:echoke_web_view/src/feature/home/presentation/bloc/network_bloc.dart';
-import 'package:echoke_web_view/src/feature/home/presentation/bloc/network_event.dart';
 import 'package:echoke_web_view/src/feature/home/presentation/bloc/network_state.dart';
+import 'package:echoke_web_view/src/feature/home/presentation/widget/network_failure.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -36,75 +36,61 @@ class _HomePageState extends State<HomePage> {
         }
         return context.mounted ? await onBackButtonPressed(context) : false;
       },
-      // onWillPop: () async {
-      //   var isLastPage = await inAppWebViewController.canGoBack();
-
-      //   if (isLastPage) {
-      //     inAppWebViewController.goBack();
-      //     return false;
-      //   }
-
-      //   return true;
-      // },
       child: Scaffold(
+        // Bottom Navigation Bar for web view
+
+        bottomNavigationBar: Container(
+          height: AppConstant.buttonHeight,
+          decoration: const BoxDecoration(
+            color: AppColors.homeButtonNavigatorColor,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(AppConstant.borderRadius),
+              topRight: Radius.circular(AppConstant.borderRadius),
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black,
+                blurRadius: AppConstant.blurRadius,
+              ),
+            ],
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                onPressed: () async {
+                  if (await inAppWebViewController.canGoBack()) {
+                    inAppWebViewController.goBack();
+                  } else {
+                    await onBackButtonPressed(context);
+                  }
+                },
+                icon: const Icon(Icons.arrow_back_ios, color: Colors.amber),
+              ),
+              IconButton(
+                  onPressed: () async {
+                    // If can go forward then go forward else do nothing
+                    if (await inAppWebViewController.canGoForward()) {
+                      inAppWebViewController.goForward();
+                    }
+                  },
+                  icon:
+                      const Icon(Icons.arrow_forward_ios, color: Colors.amber)),
+              IconButton(
+                onPressed: () {
+                  inAppWebViewController.reload();
+                },
+                icon: const Icon(Icons.refresh, color: Colors.amber),
+              ),
+            ],
+          ),
+        ),
         body: BlocBuilder<NetworkBloc, NetworkState>(
           builder: (context, state) {
             if (state is NetworkFailure) {
-              return Center(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Spacer(),
-                    const Icon(
-                      Icons.wifi_off,
-                      size: 100,
-                      color: Colors.black,
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Text(
-                      'تاكد من اتصالك بالأنترنيت وحاول مرة اخرى',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.normal,
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Spacer(),
-                    Container(
-                      width: 80,
-                      height: 30,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 1,
-                        ),
-                      ),
-                      child: GestureDetector(
-                        onTap: () {
-                          NetworkBloc().add(NetworkObserve());
-                        },
-                        child: const Text(
-                          "تحديث",
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.normal,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 30,
-                    ),
-                  ],
-                ),
-              );
+              // If network failure then show network failure card
+              // TODO : Customise the network failure card
+              return const NetworkFailureCard();
             } else if (state is NetworkSuccess) {
               return SafeArea(
                 child: Stack(
@@ -127,25 +113,8 @@ class _HomePageState extends State<HomePage> {
                       onWebViewCreated: (InAppWebViewController controller) {
                         inAppWebViewController = controller;
                       },
-                      onLoadStart:
-                          (InAppWebViewController controller, Uri? url) async {
-                        if (url
-                            .toString()
-                            .contains('https://t.me/hallapay_support')) {
-                          inAppWebViewController.stopLoading();
-                          inAppWebViewController.goBack();
-                          // inAppWebViewController.reload();
-                          const url = 'https://t.me/hallapay_support';
-                          if (await canLaunch(url)) {
-                            await launch(
-                              url,
-                            );
-                          } else {
-                            throw 'Could not launch $url';
-                          }
-                          // inAppWebViewController.stopLoading();
-                        }
-                      },
+                      onLoadStart: (InAppWebViewController controller,
+                          Uri? url) async {},
                       onProgressChanged:
                           (InAppWebViewController controller, int progress) {
                         setState(() {
@@ -153,6 +122,18 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                     ),
+                    // Show loader if progress is less than 1
+                    //  TODO : Customise the loader
+                    _progress < 1
+                        ? Align(
+                            alignment: Alignment.center,
+                            child: builderLoader(
+                                MediaQuery.of(context).size.height,
+                                MediaQuery.of(context).size.width),
+                          )
+                        : const SizedBox.shrink(),
+                    // Show progress bar if progress is less than 1
+                    //  TODO : Customise the progress bar
                     _progress < 1
                         ? Padding(
                             padding: const EdgeInsets.symmetric(
@@ -160,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                             child: Align(
                               alignment: Alignment.bottomCenter,
                               child: LinearProgressIndicator(
-                                color: AppColors.backgroundColor,
+                                color: AppColors.progressColor,
                                 value: _progress,
                               ),
                             ),

@@ -30,7 +30,7 @@
 
 
 
-    <application android:label="HallaPay Store" android:name="${applicationName}" android:icon="@mipmap/launcher_icon" android:largeHeap="true">
+    <application android:label="HallaStore" android:name="${applicationName}" android:icon="@mipmap/launcher_icon" android:largeHeap="true">
         <provider android:name="com.pichillilorenzo.flutter_inappwebview_android.InAppWebViewFileProvider" android:authorities="${applicationId}.flutter_inappwebview_android.fileprovider" android:exported="false" android:grantUriPermissions="true" android:largeHeap="true">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
         </provider>

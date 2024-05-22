@@ -25,16 +25,17 @@ if (localPropertiesFile.exists()) {
 }
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
 if (flutterVersionCode == null) {
-    flutterVersionCode = '5'
+    flutterVersionCode = '1'
 }
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
-    flutterVersionName = '1.5'
+    flutterVersionName = '1.0'
 }
 
 android {
-    namespace "com.hallapaystore.hallapay"
+    namespace "com.hallastore.hallapay"
+    //HallaStore
     compileSdkVersion 34
     ndkVersion flutter.ndkVersion
 
@@ -53,7 +54,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.hallapaystore.hallapay"
+        applicationId "com.hallastore.hallapay"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion flutter.minSdkVersion

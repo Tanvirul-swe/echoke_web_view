@@ -1,4 +1,4 @@
-package com.hallapaystore.hallapay
+package com.hallastore.hallapay
 
 import io.flutter.embedding.android.FlutterActivity
 

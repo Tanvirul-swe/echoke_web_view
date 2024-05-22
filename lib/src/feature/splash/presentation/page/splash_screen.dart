@@ -14,7 +14,10 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // Wait 3 seconds to call the next screen (Home Page)
     Future.delayed(const Duration(seconds: 1), () {
-      Navigator.pushReplacementNamed(context, '/HomePage',);
+      Navigator.pushReplacementNamed(
+        context,
+        '/HomePage',
+      );
     });
 
     super.initState();
@@ -22,6 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // TODO : Customize the SplashScreen
     return Scaffold(
       body: SafeArea(
         child: Container(
@@ -62,6 +66,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 Column(
                   children: [
+                    // TODO : Replace the logo with your own logo
                     Image.asset(
                       AppAssets.LOGO,
                       height: 80,
@@ -73,6 +78,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     const Text.rich(
                       TextSpan(
                         children: [
+                          // TODO : Customize the text
                           TextSpan(
                             text: 'HallaPay',
                             style: TextStyle(
@@ -81,6 +87,8 @@ class _SplashScreenState extends State<SplashScreen> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+
+                          // TODO : Customize the text
                           TextSpan(
                               text: 'Store',
                               style: TextStyle(
@@ -94,12 +102,16 @@ class _SplashScreenState extends State<SplashScreen> {
                     const SizedBox(
                       height: 20,
                     ),
+
+                    // TODO : Customize the text
                     const Text("بطاقات شحن الألعاب والمواقع العالمية",
                         style: TextStyle(
                           fontSize: 15,
                           color: AppColors.White,
                           fontWeight: FontWeight.normal,
                         )),
+
+                    // TODO : Customize the text
                     const Text("تسوق الان بكل امان وسرعة في التسليم",
                         style: TextStyle(
                           fontSize: 15,
