@@ -22,7 +22,7 @@ Easy Webview is a complete Flutter template for a web view2`1     app, designed 
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
+## Features 🌟
 
 - **Embedded Web Browser:** Browse the web directly within the app using the WebView widget.
 - **Navigation Controls:** Easily navigate forward, backward, and reload web pages.
@@ -83,7 +83,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 This project is licensed under the [MIT License](LICENSE).
 
-MIT License
+MIT License 📜
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
