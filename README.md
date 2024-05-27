@@ -1,8 +1,16 @@
 # Easy Webview
 
-Easy Webview is a complete Flutter template for a web review app, designed to be easily customizable and ready for deployment. This app leverages Flutter's WebView widget to provide a seamless web browsing experience, along with features to enhance usability and customization.
+Easy Webview is a complete Flutter template for a web view2`1     app, designed to be easily customizable and ready for deployment. This app leverages Flutter's WebView widget to provide a seamless web browsing experience, along with features to enhance usability and customization.
 
 ![image](https://github.com/tcurdt/jdeb/assets/159770118/243c91f8-ae17-4197-876b-d863a1ca710d)
+
+
+## Platform Support
+
+| Android | iOS | MacOS | Web | Linux | Windows |
+| :-----: | :-: | :---: | :-: | :---: | :-----: |
+|   ✔     |  ✔  |   ✘   |  ✘  |   ✘   |    ✘    |
+---
 
 
 ## Table of Contents
@@ -18,8 +26,6 @@ Easy Webview is a complete Flutter template for a web review app, designed to be
 
 - **Embedded Web Browser:** Browse the web directly within the app using the WebView widget.
 - **Navigation Controls:** Easily navigate forward, backward, and reload web pages.
-- **URL Bar:** Enter URLs directly to visit specific websites.
-- **Bookmarks:** Save and manage your favorite websites for quick access.
 - **Responsive Design:** Optimized for both mobile and tablet devices.
 - **Dark Mode Support:** Browse comfortably in low-light environments.
 - **Easy Customization:** Modify the template to suit your needs and deploy quickly.
@@ -30,17 +36,18 @@ To use Webview, follow these steps:
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/yourusername/webview.git
+    https://github.com/Tanvirul-swe/echoke_web_view.git
     ```
 2. Open the project in your preferred Flutter IDE (e.g., Android Studio, VS Code).
-3. Run `flutter pub get` to install dependencies.
-4. Connect your device/emulator and run `flutter run`.
+3. Run `flutter clear` to delete the current build.
+4. Run `flutter pub get` to install dependencies.
+5. Connect your device/emulator and run `flutter run`.
 
 ## Customization
 
 Easy Webview is designed to be easily customizable. Here are some ways you can modify the app:
 
-- **Change the App Icon:** Replace the icon file in the `assets` folder with your own app icon.
+- **Change the App Icon:** Replace the icon file in the `assets` folder with your app icon.
 - **Modify Colors and Themes:** Update the color scheme and themes in the Flutter project files to match your brand.
 - **Add New Features:** Extend the app's functionality by adding new features such as user authentication, more advanced bookmarking, or integration with other services.
 - **Customize UI Elements:** Adjust the layout, fonts, and other UI elements to better suit your design preferences.
