@@ -52,6 +52,19 @@ Easy Webview is designed to be easily customizable. Here are some ways you can m
 - **Add New Features:** Extend the app's functionality by adding new features such as user authentication, more advanced bookmarking, or integration with other services.
 - **Customize UI Elements:** Adjust the layout, fonts, and other UI elements to better suit your design preferences.
 
+  ## Customize Color
+  Flow the instructions for customizing your color palette
+
+  ## Folder Structure
+ 
+```plaintext
+|-- lib
+    |-- blocs              # BLoC (Business Logic Component) related files
+    |-- common             # Common classes and constants
+    |-- data               # Network data layer
+        |-- services       # API service classes
+        |-- repositories
+```
 
 ## Usage
 
