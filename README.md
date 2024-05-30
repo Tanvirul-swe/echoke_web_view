@@ -82,7 +82,6 @@ After installing the app, you can:
     <img width="400" alt="06" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/7e11c4ab-63f2-4a6f-9735-0329bbbd76eb"> 
     <img width="400" alt="02" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/817650f0-bd5c-42d3-ba07-00b55f87326a">
     <img width="400" alt="07" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/4873e0d8-fe8b-49e7-9f89-ccc11acf06ce">
-    <img width="400" alt="03" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/2007f6ed-87b5-4d86-9373-4116a0de7760"> 
  
 </p>
 
@@ -90,7 +89,7 @@ After installing the app, you can:
 
 ## Video Demo
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/yZdyC1xCOa4/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/yZdyC1xCOa4/0.jpg)](https://www.youtube.com/watch?v=yZdyC1xCOa4)
 
 
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
