@@ -89,7 +89,7 @@ After installing the app, you can:
 
 ## Video Demo
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OxeF7wG7IEE/0.jpg)](https://www.youtube.com/watch?v=OxeF7wG7IEE)
 
 
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
