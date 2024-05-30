@@ -92,7 +92,7 @@ After installing the app, you can:
 
 <p align="center">
     <a href="https://youtu.be/-12sjrIPc7Y" target="_blank">
-        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/PATH/TO/THUMBNAIL.png" alt="Watch the video" width="400">
+        <img src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/2007f6ed-87b5-4d86-9373-4116a0de7760" alt="Watch the video" width="400">
     </a>
 </p>
 
