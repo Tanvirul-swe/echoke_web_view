@@ -93,7 +93,6 @@ After installing the app, you can:
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OxeF7wG7IEE" frameborder="0" allowfullscreen></iframe>
 </p>
 
-
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
 ## Contributing
