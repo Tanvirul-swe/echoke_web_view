@@ -77,6 +77,24 @@ After installing the app, you can:
 
 ## Screenshots
 
+<p align="center">
+    <img width="400" alt="01" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/514a8d42-f60a-44f2-932a-f50551e95119"> 
+    <img width="400" alt="06" src="assets/screenshots/dark-1.png"> 
+    <img width="400" alt="02" src="assets/screenshots/light-2.png">
+    <img width="400" alt="07" src="assets/screenshots/dark-2.png">
+    <img width="400" alt="03" src="assets/screenshots/light-3.png"> 
+    <img width="400" alt="08" src="assets/screenshots/dark-3.png">
+    <img width="400" alt="04" src="assets/screenshots/light-4.png"> 
+    <img width="400" alt="09" src="assets/screenshots/dark-4.png"> 
+    <img width="400" alt="05" src="assets/screenshots/light-5.png">
+    <img width="400" alt="10" src="assets/screenshots/dark-5.png"> 
+   
+   <img width="400" alt="ipad-01" src="assets/screenshots/tablet-light-1.png"> 
+   <img width="400" alt="ipad-02" src="assets/screenshots/tablet-dark-1.png"> 
+   <img width="400" alt="ipad-03" src="assets/screenshots/tablet-light-2.png"> 
+   <img width="400" alt="ipad-04" src="assets/screenshots/tablet-dark-2.png"> 
+</p>
+
 ![Screenshot_1716401319](https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/514a8d42-f60a-44f2-932a-f50551e95119)
 ![Screenshot 2](screenshots/screenshot2.png)
 ![Screenshot 3](screenshots/screenshot3.png)
