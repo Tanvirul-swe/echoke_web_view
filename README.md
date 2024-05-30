@@ -89,7 +89,7 @@ After installing the app, you can:
 
 ## Video Demo
 
-[![Watch the video](https://img.youtube.com/vi/OxeF7wG7IEE/0.jpg)](https://www.youtube.com/watch?v=OxeF7wG7IEE)
+[![Watch the video](https://img.youtube.com/vi/ehYzABHvMB4/0.jpg)](https://www.youtube.com/watch?v=ehYzABHvMB4)
 
 
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
