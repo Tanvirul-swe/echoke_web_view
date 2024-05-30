@@ -77,7 +77,7 @@ After installing the app, you can:
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot_1716401319](https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/514a8d42-f60a-44f2-932a-f50551e95119)
 ![Screenshot 2](screenshots/screenshot2.png)
 ![Screenshot 3](screenshots/screenshot3.png)
 ...
