@@ -89,7 +89,9 @@ After installing the app, you can:
 
 ## Video Demo
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OxeF7wG7IEE/0.jpg)](https://www.youtube.com/watch?v=OxeF7wG7IEE)
+<p align="center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OxeF7wG7IEE" frameborder="0" allowfullscreen></iframe>
+</p>
 
 
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
