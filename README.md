@@ -86,14 +86,11 @@ After installing the app, you can:
  
 </p>
 
-![Screenshot_1716401319](https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/514a8d42-f60a-44f2-932a-f50551e95119)
-![Screenshot 2](screenshots/screenshot2.png)
-![Screenshot 3](screenshots/screenshot3.png)
 ...
 
 ## Video Demo
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+https://streamable.com/rkvoj9
 
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
