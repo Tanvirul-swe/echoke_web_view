@@ -90,7 +90,11 @@ After installing the app, you can:
 
 ## Video Demo
 
-https://streamable.com/rkvoj9
+<p align="center">
+    <a href="https://youtu.be/-12sjrIPc7Y" target="_blank">
+        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/PATH/TO/THUMBNAIL.png" alt="Watch the video" width="400">
+    </a>
+</p>
 
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
