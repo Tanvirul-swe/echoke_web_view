@@ -90,11 +90,8 @@ After installing the app, you can:
 
 ## Video Demo
 
-<p align="center">
-    <a href="https://youtu.be/-12sjrIPc7Y" target="_blank">
-        <img src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/2007f6ed-87b5-4d86-9373-4116a0de7760" alt="Watch the video" width="400">
-    </a>
-</p>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/yZdyC1xCOa4/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
 
 [Link to video demo](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
