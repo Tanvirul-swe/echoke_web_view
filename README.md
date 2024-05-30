@@ -79,20 +79,11 @@ After installing the app, you can:
 
 <p align="center">
     <img width="400" alt="01" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/514a8d42-f60a-44f2-932a-f50551e95119"> 
-    <img width="400" alt="06" src="assets/screenshots/dark-1.png"> 
-    <img width="400" alt="02" src="assets/screenshots/light-2.png">
-    <img width="400" alt="07" src="assets/screenshots/dark-2.png">
-    <img width="400" alt="03" src="assets/screenshots/light-3.png"> 
-    <img width="400" alt="08" src="assets/screenshots/dark-3.png">
-    <img width="400" alt="04" src="assets/screenshots/light-4.png"> 
-    <img width="400" alt="09" src="assets/screenshots/dark-4.png"> 
-    <img width="400" alt="05" src="assets/screenshots/light-5.png">
-    <img width="400" alt="10" src="assets/screenshots/dark-5.png"> 
-   
-   <img width="400" alt="ipad-01" src="assets/screenshots/tablet-light-1.png"> 
-   <img width="400" alt="ipad-02" src="assets/screenshots/tablet-dark-1.png"> 
-   <img width="400" alt="ipad-03" src="assets/screenshots/tablet-light-2.png"> 
-   <img width="400" alt="ipad-04" src="assets/screenshots/tablet-dark-2.png"> 
+    <img width="400" alt="06" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/7e11c4ab-63f2-4a6f-9735-0329bbbd76eb"> 
+    <img width="400" alt="02" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/817650f0-bd5c-42d3-ba07-00b55f87326a">
+    <img width="400" alt="07" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/4873e0d8-fe8b-49e7-9f89-ccc11acf06ce">
+    <img width="400" alt="03" src="https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/2007f6ed-87b5-4d86-9373-4116a0de7760"> 
+ 
 </p>
 
 ![Screenshot_1716401319](https://github.com/Tanvirul-swe/echoke_web_view/assets/75753499/514a8d42-f60a-44f2-932a-f50551e95119)
